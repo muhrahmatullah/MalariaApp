@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah dilakukan pemeriksaan HB ?"/>
+
+            <RadioButton
+                android:id="@+id/radioyademam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iya"
+                android:onClick="openEditText"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiotidakdemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="closeEditText"
+                android:text="Tidak" />
+        </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/editTextLayoutdemam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/kadarhb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:hint="Hasil pemeriksaan HB" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah dilakukan pemeriksaan leko ?"/>
+
+            <RadioButton
+                android:id="@+id/radioyalekodemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iya"
+                android:onClick="openEditTextLeko"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiotidaklekodemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="closeEditTextLeko"
+                android:text="Tidak" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/editTextLayoutdemam1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadarbasofildemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar Basofil" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadareosinofildemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar eosinofil" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadarnetrofilbtgdemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar netrofil batang" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadarnetrofilsgmdemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar netrofil segmen" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadarlimfositdemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar limfosit" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/kadarmonositdemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:hint="Kadar monosit" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah ada pemeriksaan tinja ?"/>
+
+            <RadioButton
+                android:id="@+id/radioyatinjademam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iya"
+                android:onClick="openRadioGroupTinja"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiotidaktinjademam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="closeRadioGroupTinja"
+                android:text="Tidak" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiotinjademamcacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah pasien dinyatakan cacingan ?"/>
+
+            <RadioButton
+                android:id="@+id/radioyacacingdemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iya"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiotidakcacingdemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiotempattinggaldemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana kondisi tempat tinggal pasien ?"/>
+
+            <RadioButton
+                android:id="@+id/radionormaltinggaldemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiocukuptinggaldemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukup/kurang" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiodtidakdemam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana kondisi gizi pasien ?"/>
+
+            <RadioButton
+                android:id="@+id/radionormalgizidemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiocukupgizidemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukup/kurang" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioddemamkelambu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah pasien menggunakan kelambu?"/>
+
+            <RadioButton
+                android:id="@+id/radioyakelambudemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iyya"
+                android:onClick="openRadioKelambu"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiotidakkelambudemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="closeRadioKelambu"
+                android:text="Tidak" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioadakelambudemam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana kualitas kelambu ?"/>
+
+            <RadioButton
+                android:id="@+id/radionormalkelambudemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiocukupkelambudemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukup/kurang" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiodtidakdemammalari2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah pasien positif malaria ?"/>
+
+            <RadioButton
+                android:id="@+id/radiopositifmalariademam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Positif"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radionegatifmalariademam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Negatif" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/btnsubmitdemam"
+            android:layout_marginTop="22dp"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/activity_pemeriksaan_demam2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.rahmat.mycode.malariaapp.PemeriksaanDemam2">
+
+    <RadioGroup
+        android:id="@+id/radioddemamkelambu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apakah pasien menggunakan kelambu?"/>
+
+        <RadioButton
+            android:id="@+id/radioyakelambudemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iyya"
+            android:onClick="openRadioGroup"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radiotidakkelambudemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="closeRadioGroup"
+            android:text="Tidak" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radiokualitaskelambudemam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagaimana Kualitas Kelambu ?"/>
+
+        <RadioButton
+            android:id="@+id/radionormalkelambudemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+
+        <RadioButton
+            android:id="@+id/radiocukupkelambudemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cukup/kurang" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radiogizidemam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagaimana kondisi gizi pasien ?"/>
+
+        <RadioButton
+            android:id="@+id/radionormalgizidemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radiocukupgizidemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cukup/kurang" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiotempattinggaldemam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagaimana kondisi tempat tinggal pasien ?"/>
+
+        <RadioButton
+            android:id="@+id/radionormaltinggaldemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radiocukuptinggaldemam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cukup/kurang" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiodemammalaria2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apakah pasien positif malaria ?"/>
+
+        <RadioButton
+            android:id="@+id/radiopositifmalariademam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positif"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radionegatifmalariademam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negatif" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/btnsubmitdemam2"
+        android:layout_marginTop="22dp"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.rahmat.mycode.malariaapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harap lengkapi informasi berikut ini :"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemeriksaan ke :"
+        android:layout_marginTop="22dp"/>
+    <!-- Bikin method yang nilai keluarannya mengambil hari ini
+    jadi tidak perlu memilih tanggal secara manual-->
+    <RadioGroup
+        android:id="@+id/radiopemeriksaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:onClick="closeLinear"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openLinear"
+            android:text="2" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openLinear"
+            android:text="3" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/tanggalsebelum">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal pemeriksaan sebelumnya :"
+        />
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi tanggal"
+        android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal lahir pasien :"
+        android:layout_marginTop="22dp"/>
+    <TextView
+        android:id="@+id/tvpatientage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isi tanggal"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apakah pasien mengalami demam ?"
+        android:layout_marginTop="22dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiodemam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ya"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radiotidak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tidak" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:onClick="setButtonSubmitClicked"
+        android:layout_marginTop="22dp"
+        android:text="Submit"/>
+    <!--buat dialog untuk menanyakan apakah ada pemeriksaan lab atau tidak-->
+
+
+</LinearLayout>
